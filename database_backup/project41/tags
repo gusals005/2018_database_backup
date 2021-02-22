@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=gcc$/;"	m
+DEFAULT_ORDER	include/bpt.h	16;"	d
+INC	Makefile	/^INC=include\/$/;"	m
+LIBS	Makefile	/^LIBS=lib\/$/;"	m
+LICENSE_CONDITIONS	include/bpt.h	28;"	d
+LICENSE_CONDITIONS_END	include/bpt.h	30;"	d
+LICENSE_CONDITIONS_START	include/bpt.h	29;"	d
+LICENSE_FILE	include/bpt.h	24;"	d
+LICENSE_WARRANTEE	include/bpt.h	25;"	d
+LICENSE_WARRANTEE_END	include/bpt.h	27;"	d
+LICENSE_WARRANTEE_START	include/bpt.h	26;"	d
+MAX_ORDER	include/bpt.h	21;"	d
+MIN_ORDER	include/bpt.h	20;"	d
+OBJS_FOR_LIB	Makefile	/^OBJS_FOR_LIB:=$(SRCS_FOR_LIB:.c=.o)$/;"	m
+SRCDIR	Makefile	/^SRCDIR=src\/$/;"	m
+SRCS_FOR_LIB	Makefile	/^SRCS_FOR_LIB:=$(SRCDIR)bpt.c$/;"	m
+TARGET	Makefile	/^TARGET=main$/;"	m
+TARGET_OBJ	Makefile	/^TARGET_OBJ:=$(SRCDIR)main.o$/;"	m
+TARGET_SRC	Makefile	/^TARGET_SRC:=$(SRCDIR)main.c$/;"	m
+Version	src/bpt.c	4;"	d	file:
+__BPT_H__	include/bpt.h	2;"	d
+adjust_root	src/bpt.c	/^node * adjust_root(node * root) {$/;"	f
+bool	include/bpt.h	10;"	d
+coalesce_nodes	src/bpt.c	/^node * coalesce_nodes(node * root, node * n, node * neighbor, int neighbor_index, int k_prime) {$/;"	f
+cut	src/bpt.c	/^int cut( int length ) {$/;"	f
+delete	src/bpt.c	/^node * delete(node * root, int key) {$/;"	f
+delete_entry	src/bpt.c	/^node * delete_entry( node * root, node * n, int key, void * pointer ) {$/;"	f
+dequeue	src/bpt.c	/^node * dequeue( void ) {$/;"	f
+destroy_tree	src/bpt.c	/^node * destroy_tree(node * root) {$/;"	f
+destroy_tree_nodes	src/bpt.c	/^void destroy_tree_nodes(node * root) {$/;"	f
+enqueue	src/bpt.c	/^void enqueue( node * new_node ) {$/;"	f
+false	include/bpt.h	11;"	d
+find	src/bpt.c	/^record * find( node * root, int key, bool verbose ) {$/;"	f
+find_and_print	src/bpt.c	/^void find_and_print(node * root, int key, bool verbose) {$/;"	f
+find_and_print_range	src/bpt.c	/^void find_and_print_range( node * root, int key_start, int key_end,$/;"	f
+find_leaf	src/bpt.c	/^node * find_leaf( node * root, int key, bool verbose ) {$/;"	f
+find_range	src/bpt.c	/^int find_range( node * root, int key_start, int key_end, bool verbose,$/;"	f
+get_left_index	src/bpt.c	/^int get_left_index(node * parent, node * left) {$/;"	f
+get_neighbor_index	src/bpt.c	/^int get_neighbor_index( node * n ) {$/;"	f
+height	src/bpt.c	/^int height( node * root ) {$/;"	f
+insert	src/bpt.c	/^node * insert( node * root, int key, int value ) {$/;"	f
+insert_into_leaf	src/bpt.c	/^node * insert_into_leaf( node * leaf, int key, record * pointer ) {$/;"	f
+insert_into_leaf_after_splitting	src/bpt.c	/^node * insert_into_leaf_after_splitting(node * root, node * leaf, int key, record * pointer) {$/;"	f
+insert_into_new_root	src/bpt.c	/^node * insert_into_new_root(node * left, int key, node * right) {$/;"	f
+insert_into_node	src/bpt.c	/^node * insert_into_node(node * root, node * n, $/;"	f
+insert_into_node_after_splitting	src/bpt.c	/^node * insert_into_node_after_splitting(node * root, node * old_node, int left_index, $/;"	f
+insert_into_parent	src/bpt.c	/^node * insert_into_parent(node * root, node * left, int key, node * right) {$/;"	f
+is_leaf	include/bpt.h	/^    bool is_leaf;$/;"	m	struct:node
+keys	include/bpt.h	/^    int * keys;$/;"	m	struct:node
+license_notice	src/bpt.c	/^void license_notice( void ) {$/;"	f
+main	src/main.c	/^int main( int argc, char ** argv ) {$/;"	f
+make_leaf	src/bpt.c	/^node * make_leaf( void ) {$/;"	f
+make_node	src/bpt.c	/^node * make_node( void ) {$/;"	f
+make_record	src/bpt.c	/^record * make_record(int value) {$/;"	f
+next	include/bpt.h	/^    struct node * next; \/\/ Used for queue.$/;"	m	struct:node	typeref:struct:node::node
+node	include/bpt.h	/^typedef struct node {$/;"	s
+node	include/bpt.h	/^} node;$/;"	t	typeref:struct:node
+num_keys	include/bpt.h	/^    int num_keys;$/;"	m	struct:node
+order	src/bpt.c	/^int order = DEFAULT_ORDER;              \/\/ DEFAULT_ORDER은 4$/;"	v
+parent	include/bpt.h	/^    struct node * parent;$/;"	m	struct:node	typeref:struct:node::node
+path_to_root	src/bpt.c	/^int path_to_root( node * root, node * child ) {$/;"	f
+pointers	include/bpt.h	/^    void ** pointers;$/;"	m	struct:node
+print_leaves	src/bpt.c	/^void print_leaves( node * root ) {$/;"	f
+print_license	src/bpt.c	/^void print_license( int license_part ) {$/;"	f
+print_tree	src/bpt.c	/^void print_tree( node * root ) {       \/\/root 를 입력을 하면$/;"	f
+queue	src/bpt.c	/^node * queue = NULL;$/;"	v
+record	include/bpt.h	/^typedef struct record {$/;"	s
+record	include/bpt.h	/^} record;$/;"	t	typeref:struct:record
+redistribute_nodes	src/bpt.c	/^node * redistribute_nodes(node * root, node * n, node * neighbor, int neighbor_index, $/;"	f
+remove_entry_from_node	src/bpt.c	/^node * remove_entry_from_node(node * n, int key, node * pointer) {$/;"	f
+start_new_tree	src/bpt.c	/^node * start_new_tree(int key, record * pointer) {$/;"	f
+true	include/bpt.h	12;"	d
+usage_1	src/bpt.c	/^void usage_1( void ) {$/;"	f
+usage_2	src/bpt.c	/^void usage_2( void ) {$/;"	f
+usage_3	src/bpt.c	/^void usage_3( void ) {$/;"	f
+value	include/bpt.h	/^    int value;$/;"	m	struct:record
+verbose_output	src/bpt.c	/^bool verbose_output = false;$/;"	v

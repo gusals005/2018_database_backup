@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "bpt.h": "c",
+        "vector": "c",
+        "time.h": "c",
+        "ostream": "cpp",
+        "functional": "cpp",
+        "unordered_map": "cpp"
+    }
+}
